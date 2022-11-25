@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">ThirtyDays</string>
+    <string name="app_header">Mythical Creatures</string>
+
+    //Creatures Name, Description and Origin
+
+    <string name="creature1">Golems</string>
+    <string name="description1">Made from mud, who have been brought to life to serve some purpose</string>
+    <string name="origin1">Jewish</string>
+
+    <string name="creature2">Oni</string>
+    <string name="description2">Wicked creatures who are destined into becoming Demon in hell</string>
+    <string name="origin2">Japanese</string>
+
+    <string name="creature3">Cyclops</string>
+    <string name="description3">Lawless people who are clever shepard</string>
+    <string name="origin3">Greek</string>
+
+    <string name="creature4">Ogre</string>
+    <string name="description4">Tall, Strong and Hairy Gobblers - Basically Shrek</string>
+    <string name="origin4">Etruscan</string>
+
+    <string name="creature5">Leprechauns</string>
+    <string name="description5">Sally, tiny and recluse mischiefs</string>
+    <string name="origin5">Irish</string>
+
+    <string name="creature6">Gnomes</string>
+    <string name="description6">Either a Desktop Environment or a Small Dwarf</string>
+    <string name="origin6">Swedish</string>
+
+    <string name="creature7">Goblins</string>
+    <string name="description7">Malevolent troublemakers</string>
+    <string name="origin7">Germanic</string>
+
+    <string name="creature8">Faeries</string>
+    <string name="description8">Faeries, Fairies, Fey, Foo, Faa</string>
+    <string name="origin8">Celtic</string>
+
+    <string name="creature9">Gorgon</string>
+    <string name="description9">Beautiful and terrifying creatures, having Snakes stead of hairs</string>
+    <string name="origin9">Greek</string>
+
+    <string name="creature10">Mermaid</string>
+    <string name="description10">Half Human-Half Fish-Full Imagination</string>
+    <string name="origin10">Babylon</string>
+
+    <string name="creature11">Aqrabuamelu</string>
+    <string name="description11">Scorpion Man who were created to sneak on to Gods</string>
+    <string name="origin11">Mesopotamia</string>
+
+    <string name="creature12">Minotaur</string>
+    <string name="description12">Body of a Man with head and tail of a Bull.</string>
+    <string name="origin12">Crete</string>
+
+    <string name="creature13">Centaurs</string>
+    <string name="description13">Body of a Man with lower half of a Horse</string>
+    <string name="origin13">Greek</string>
+
+    <string name="creature14">Fauns</string>
+    <string name="description14">Human-like upper body with legs and tail of a Goat</string>
+    <string name="origin14">Roman</string>
+
+    <string name="creature15">Werewolf</string>
+    <string name="description15">A human who can willfully transform into a Wolf</string>
+    <string name="origin15">Germanic</string>
+
+    <string name="creature16">Loch Ness creature</string>
+    <string name="description16">A water monster as it cannot live on land, also cannot then be believable</string>
+    <string name="origin16">Scotland</string>
+
+    <string name="creature17">Griffin</string>
+    <string name="description17">Majestic hybrid of Lion and Eagle, Guards of Great Treasures</string>
+    <string name="origin17">Egyptian</string>
+
+    <string name="creature18">Phoenix</string>
+    <string name="description18">Mythical Eagle-like creature who bursts into flame when grows old</string>
+    <string name="origin18">Egyptian</string>
+
+    <string name="creature19">Basilisk</string>
+    <string name="description19">Serpentine creatures who can kill with one look</string>
+    <string name="origin19">English(UK)</string>
+
+    <string name="creature20">Unicorn</string>
+    <string name="description20">$1B</string>
+    <string name="origin20">Mesopotamia</string>
+
+    <string name="creature21">Dragon</string>
+    <string name="description21">Dinosaurs like creature who can breathe fire, Vicks promoters</string>
+    <string name="origin21">Unknown</string>
+
+    <string name="creature22">Bigfoot</string>
+    <string name="description22">Hairy android</string>
+    <string name="origin22">American</string>
+
+    <string name="creature23">Chimera</string>
+    <string name="description23">Lion merged with Human or Goat</string>
+    <string name="origin23">Greek</string>
+
+    <string name="creature24">Hydra</string>
+    <string name="description24">Gigantic, snake-like monster with many heads, each of which could dispel acid</string>
+    <string name="origin24">Greek</string>
+
+    <string name="creature25">Zombie</string>
+    <string name="description25">Dead Inside, Filthy Outside</string>
+    <string name="origin25">Hollywood</string>
+
+    <string name="creature26">Pontianak</string>
+    <string name="description26">Pale frightening creature who prey on Men</string>
+    <string name="origin26">Malay</string>
+
+
+    <string name="creature27">Banshee</string>
+    <string name="description27">Genitive spirit who visits and warns Families of coming deaths</string>
+    <string name="origin27">Irish</string>
+
+
+    <string name="creature28">Dybbuk</string>
+    <string name="description28">Ghosts who possesses Humans for some goal</string>
+    <string name="origin28">Jewish</string>
+
+    <string name="creature29">Vampire</string>
+    <string name="description29">Fantasy blood drinkers</string>
+    <string name="origin29">European</string>
+
+    <string name="creature30">Bogeyman</string>
+    <string name="description30">Keanu Reaves</string>
+    <string name="origin30">Universal</string>
+
+    <string name="expandContent">Expand Card</string>
+    <string name="collapseContent">Collapse Card</string>
+</resources>
