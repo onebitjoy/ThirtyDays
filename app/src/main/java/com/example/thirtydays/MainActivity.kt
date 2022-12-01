@@ -4,13 +4,11 @@ import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.SpringSpec
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -96,7 +94,8 @@ fun InfoCard(creature: Creatures, modifier: Modifier = Modifier) {
                     dampingRatio = Spring.DampingRatioNoBouncy,
                     stiffness = Spring.StiffnessLow
                 )
-            ),
+            )
+            .clickable { expanded = !expanded },
     ) {
         Column {
             Row(
@@ -156,24 +155,18 @@ fun InfoCard(creature: Creatures, modifier: Modifier = Modifier) {
                             )
                         }
                         Spacer(Modifier.weight(1f))
-                        //Show More
-                        TextButton(
-                            colors = ButtonDefaults.textButtonColors(
-                                backgroundColor = Color.Transparent,
-                                contentColor = MaterialTheme.colors.onSurface
-                            ), onClick = { expanded = !expanded }) {
-                            Text(
-                                text = if (expanded) "Show More".uppercase() else "Show Less".uppercase(),
-                                style = MaterialTheme.typography.overline
-                            )
-                        }
+                        //Show More (was a button to flip visibility state)-
+                        // We won't need to implement the button to change state,
+                        // We can make the parent to be clickable which changes a mutable state
+                        // then that mutable state is watched by AnimatedVisibility(Boolean), which
+                        // settles the hidden/exposed function
                     }
 
 
                 }
             }
             //Description Collapsible and Expandable content
-            if (expanded) { // Description
+            AnimatedVisibility(expanded) { // Description
                 Text(
                     text = stringResource(id = creature.description),
                     style = MaterialTheme.typography.body1,
@@ -193,28 +186,28 @@ fun InfoCard(creature: Creatures, modifier: Modifier = Modifier) {
 }
 
 /* === Uncomment for Previews ===*/
-//@Preview(showBackground = true)
-//@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
-//@Composable
-//private fun InfoCardPreview() {
-//    val creature = Creatures(
-//        name = R.string.creature1,
-//        description = R.string.description1,
-//        origin = R.string.origin1,
-//        image = R.drawable.creatureimage1
-//    )
-//    ThirtyDaysTheme {
-//        InfoCard(creature = creature)
-//    }
-//}
-//
-//@Preview(showBackground = true, showSystemUi = true)
-//@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
-//@Composable
-//fun ThirtyDaysAppPreview() {
-//    ThirtyDaysTheme {
-//        ThirtyDaysApp()
-//    }
-//}
-//
+@Preview(showBackground = true)
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Composable
+private fun InfoCardPreview() {
+    val creature = Creatures(
+        name = R.string.creature1,
+        description = R.string.description1,
+        origin = R.string.origin1,
+        image = R.drawable.creatureimage1
+    )
+    ThirtyDaysTheme {
+        InfoCard(creature = creature)
+    }
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Composable
+fun ThirtyDaysAppPreview() {
+    ThirtyDaysTheme {
+        ThirtyDaysApp()
+    }
+}
+
 
