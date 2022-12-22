@@ -1,14 +1,17 @@
 # ThirtyDays
-Thirty days exercise - 30 different creaures
+Thirty days exercise - **Thirty Monsters**
 
-##App Images
-Light theme
-![image](https://user-images.githubusercontent.com/95994085/209156275-d53f3af9-10ee-40da-b980-1af7ffe45dea.png)
+## App Screenshots
+> Light theme
+ 
+![light30days](https://user-images.githubusercontent.com/95994085/209164554-a1a29f11-8f56-4194-ae74-a255549ed23c.png)
 
-Dark Theme
-![image](https://user-images.githubusercontent.com/95994085/209156432-a88208e4-31ee-40a2-a4f3-52350dcbef0d.png)
+> Dark Theme
 
-##Description
+![dark30days](https://user-images.githubusercontent.com/95994085/209164650-aa4f1d46-2b8e-4e31-b642-dc3dc6e5b284.png)
+
+
+## Description
 In this project, I solved the Android Development with Jetpack Compose's exercise which asked me
 to create an application for affirmations(which I modified for monsters) with atleast 30 entries.
 
